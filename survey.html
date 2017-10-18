@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<link rel="stylesheet" type="text/css" href="style/survey.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<title>Survey</title>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			
+		</header>
+		<main>
+			<form action="server.php" method="post" onchange="check()">
+				<section>
+					<h2>Question 1</h2>
+					<p>What is your gender?</p>
+					<div class="answer">
+						<div class="odd"><input type="radio" name="gender" value="Male" class="input-gender"> Male<br></div>
+  						<input type="radio" name="gender" value="Female" class="input-gender"> Female<br>
+					</div>
+				</section>
+				<section>
+					<h2>Question 2</h2>
+					<p>How old are you?</p>
+					<div class="answer">
+						<div class="odd"><input type="radio" name="age" value="<18" class="input-age"> Less than 18<br></div>
+  						<input type="radio" name="age" value="18-24" class="input-age"> 18-24<br>
+  						<div class="odd"><input type="radio" name="age" value="25-30" class="input-age"> 25-30<br></div>
+  						<input type="radio" name="age" value="31-40" class="input-age"> 31-40<br>
+  						<div class="odd"><input type="radio" name="age" value="41-50" class="input-age"> 41-50<br></div>
+  						<input type="radio" name="age" value="51-60" class="input-age"> 51-60<br>
+  						<div class="odd"><input type="radio" name="age" value="61-70" class="input-age"> 61-70<br></div>
+  						<input type="radio" name="age" value=">70" class="input-age"> More than 70<br>
+					</div>
+				</section>
+				<section>
+					<h2>Question 3</h2>
+					<p>What is your favourite music genre?</p>
+					<div class="answer">
+						<div class="odd"><input type="radio" name="music" value="Alternative" class="input-music"> Alternative<br></div>
+  						<input type="radio" name="music" value="Blues" class="input-music"> Blues<br>
+  						<div class="odd"><input type="radio" name="music" value="Classical" class="input-music"> Classical<br></div>
+  						<input type="radio" name="music" value="Dance" class="input-music"> Dance<br>
+  						<div class="odd"><input type="radio" name="music" value="Electronic" class="input-music"> Electronic<br></div>
+  						<input type="radio" name="music" value="Jazz" class="input-music"> Jazz<br>
+  						<div class="odd"><input type="radio" name="music" value="Metal" class="input-music"> Metal<br></div>
+  						<input type="radio" name="music" value="Pop" class="input-music"> Pop<br>
+  						<div class="odd"><input type="radio" name="music" value="Rap" class="input-music"> Rap<br></div>
+  						<input type="radio" name="music" value="Rock" class="input-music"> Rock<br>
+  						<div class="odd"><input type="radio" name="music" value="Soul" class="input-music"> Soul<br></div>
+					</div>
+				</section>
+				<section>
+					<h2>Question 4</h2>
+					<p>What kind of movies you like the most?</p>
+					<div class="answer">
+						<div class="odd"><input type="radio" name="movies" value="Action" class="input-movies"> Action<br></div>
+						<input type="radio" name="movies" value="Adventure" class="input-movies"> Adventure<br>
+						<div class="odd"><input type="radio" name="movies" value="Comedy" class="input-movies"> Comedy<br></div>
+						<input type="radio" name="movies" value="Documentary" class="input-movies"> Documentary<br>
+  						<div class="odd"><input type="radio" name="movies" value="Drama" class="input-movies"> Drama<br></div>
+  						<input type="radio" name="movies" value="Horror" class="input-movies"> Horror<br>
+  						<div class="odd"><input type="radio" name="movies" value="Romance" class="input-movies"> Romance<br></div>
+  						<input type="radio" name="movies" value="Sci-fi" class="input-movies"> Sci-fi<br>
+					</div>
+				</section>
+				<section>
+					<h2>Question 5</h2>
+					<p>What is your favourite color?</p>
+					<div class="answer">
+						<div class="odd"><input type="radio" name="color" value="Black" class="input-color"> Black<br></div>
+						<input type="radio" name="color" value="Blue" class="input-color"> Blue<br>
+  						<div class="odd"><input type="radio" name="color" value="Green" class="input-color"> Green<br></div>
+  						<input type="radio" name="color" value="Grey" class="input-color"> Grey<br>
+  						<div class="odd"><input type="radio" name="color" value="Red" class="input-color"> Red<br></div>
+  						<input type="radio" name="color" value="Pink" class="input-color"> Pink<br>
+  						<div class="odd"><input type="radio" name="color" value="Purple" class="input-color"> Purple<br></div>
+  						<input type="radio" name="color" value="White" class="input-color"> White<br>
+  						<div class="odd"><input type="radio" name="color" value="Yellow" class="input-color"> Yellow<br></div>
+					</div>
+				</section>
+				<section>
+					<h2>Question 6</h2>
+					<p>Do you prefer cats or dogs?</p>
+					<div class="answer">
+						<div class="odd"><input type="radio" name="animal" value="Cats" class="input-animal"> Cats<br></div>
+  						<input type="radio" name="animal" value="Dogs" class="input-animal"> Dogs<br>
+  						<div class="odd"><input type="radio" name="animal" value="None" class="input-animal"> I don't like both cats and dogs<br></div>
+					</div>
+				</section>
+				<section>
+					<h2>Question 7</h2>
+					<p>Where do you live?</p>
+					<div class="answer">
+						<div class="odd"><input type="radio" name="place" value="Big-city" class="input-place"> Big city <span>(more than 1 000 000 people)</span><br></div>
+  						<input type="radio" name="place" value="Regular-city" class="input-place"> Regular city <span>(more than 100 000 people but less than 1 000 000)</span><br>
+  						<div class="odd"><input type="radio" name="place" value="Small-city" class="input-place"> Small city <span>(less than 100 000 people)</span><br></div>
+  						<input type="radio" name="place" value="Countryside" class="input-place"> Countryside<br>
+					</div>
+				</section>
+				<section>
+					<h2>Question 8</h2>
+					<p>Would you rather describe yourself as convservative or liberal?</p>
+					<div class="answer">
+						<div class="odd"><input type="radio" name="worldview" value="Conservative" class="input-worldview"> Conservative<br></div>		
+  						<input type="radio" name="worldview" value="Liberal" class="input-worldview"> Liberal<br>
+					</div>
+				</section>
+				<section>
+					<h2>Question 9</h2>
+					<p>What are your religious beliefs?</p>
+					<div class="answer">
+						<div class="odd"><input type="radio" name="religion" value="Agnosticism" class="input-religion"> Agnosticism<br></div>
+						<input type="radio" name="religion" value="Atheism" class="input-religion"> Atheism<br>
+  						<div class="odd"><input type="radio" name="religion" value="Buddhism" class="input-religion"> Buddhism<br></div>
+  						<input type="radio" name="religion" value="Christianity" class="input-religion"> Christianity<br>
+  						<div class="odd"><input type="radio" name="religion" value="Islam" class="input-religion"> Islam<br></div>
+  						<input type="radio" name="religion" value="Judaism" class="input-religion"> Judaism<br>
+  						<div class="odd"><input type="radio" name="religion" value="Hinduism" class="input-religion"> Hinduism<br></div>
+  						<input type="radio" name="religion" value="Other" class="input-religion"> Other<br>
+					</div>
+				</section>
+				<input id="submit-survey" type="submit" name="submit" value="Submit" disabled>
+				<div id="bottom"></div>
+			</form>
+		</main>
+		<footer>
+			<a href="https://github.com/RGladys">
+				<img id="git" src="images/github.png">
+				<p>Site made by Radoslaw Gladys.</p>
+			</a>
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/survey.js"></script>
+</body>
+</html>

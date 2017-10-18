@@ -1,0 +1,180 @@
+circle {
+	stroke: #595959;
+}
+
+#container-compare {
+	display: none;
+	background: #ddd4ba;
+}
+
+.graph-container {
+	margin: auto;
+	background: #ddd4ba;
+	width: 100%;
+	padding-top: 5px;
+	border-top: 1px solid #9b9b9b;
+} 
+
+svg {
+	background: #e5ddc5;
+	border-top: 1px solid #9b9b9b;
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+
+.graph-button {
+	display: inline-block;
+	border-left: 1px solid #9b9b9b;
+	border-right: 1px solid #9b9b9b;
+	border-top: 1px solid #9b9b9b;
+	border-radius: 8px 8px 0 0;
+	cursor: pointer;
+}
+
+#single {
+	background: #ddd4ba;
+}
+
+#compare {
+	background: #ccc5b1;
+}
+
+#container-compare p {
+	display: inline-block;
+}
+
+select {
+  	border: 1px solid #111;
+  	border: 1px solid #ccc;
+  	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	appearance: none;
+  	background: #eee;
+  	position: relative;
+}
+
+
+@media (min-width:300px)  {
+	#container-single {
+		height: 510px;
+	}
+
+	#container-compare {
+		height: 606px;
+	}
+
+	svg {
+		height: 472px;
+	}
+
+	select {
+		display: block;
+		margin: auto;
+		margin-bottom: 5px;
+		width: 96%;
+		height: 28px;
+  		padding: 5px;
+  		font-size: .34em;
+	}
+
+	.graph-button {
+		font-size: .5em;
+		margin-left: 1px;
+		height: 27px;
+	}
+
+	#menu {
+		margin-bottom: -4px;
+	}
+
+	#container-compare p {
+		font-size: .4em;
+	}
+
+	.graph-container p {
+		padding-left: 10px;
+	}
+}
+
+
+@media (min-width:600px)  {
+	svg {
+		height: 466px;
+	}
+
+	select {
+		margin: 6px;
+		width: 150px;
+		height: 33px;
+  		padding: 5px;
+  		font-size: .4em;
+  		margin: 0 0 5px 5px;
+  		display: inline-block;
+	}
+
+	#container-compare {
+		height: 524px;
+	}
+}
+
+
+@media (min-width:801px)  {
+	#container-single, #container-compare {
+		height: 594px;
+	}
+
+	svg {
+		height: 536px;
+	}
+
+	#menu {
+		height: 40px;
+	}
+
+	.graph-button {
+		font-size: .6em;
+		height: 31px;
+
+	}
+
+	#menu {
+		margin-bottom: 5px;
+	}
+
+	#container-compare p {
+		font-size: .5em;
+	}
+}
+
+
+@media (min-width:1025px) {
+	#container-single, #container-compare {
+		height: 598px;
+	}
+
+	svg {
+		height: 541px;
+	}
+
+	select {
+		margin: -20px 0 5px 5px;
+		width: 150px;
+		height: 33px;
+  		padding: 5px;
+  		font-size: .43em;
+	}
+
+	#menu {
+		height: 40px;
+		margin-bottom: 5px;
+	}
+
+	.graph-button {
+		font-size: .6em;
+	}
+
+	#container-compare p {
+		font-size: .55em;
+	}
+}

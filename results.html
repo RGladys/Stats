@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<link rel="stylesheet" type="text/css" href="style/results.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<script type="text/javascript" src="js/d3.min.js"></script>
+	<title>Results</title>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+				
+		</header>
+		<main>
+			<div id="menu">
+				<div class="graph-button" id="single">Single categories</div>
+				<div class="graph-button" id="compare">Compare values</div>
+			</div>
+			<div class="graph-container" id="container-single" onchange="selectSingle()">
+				<select id="select1">
+					<option>Gender</option>
+					<option>Age</option>
+					<option>Music</option>
+					<option>Movies</option>
+					<option>Color</option>
+					<option>Animal</option>
+					<option>Place</option>
+					<option>Worldview</option>
+					<option>Religion</option>
+				</select>
+
+				<svg id="graph1">
+					
+				</svg>
+			</div>
+
+			<div class="graph-container" id="container-compare" onchange="selectCompare()">
+				
+				<select id="select2">
+					<option>Gender</option>
+					<option>Age</option>
+					<option>Music</option>
+					<option>Movies</option>
+					<option>Color</option>
+					<option>Animal</option>
+					<option>Place</option>
+					<option>Worldview</option>
+					<option>Religion</option>
+				</select>
+
+				<p>By: </p>
+
+				<select id="select3" onchange="loadSelect()">
+					<option>Gender</option>
+					<option>Age</option>
+					<option>Music</option>
+					<option>Movies</option>
+					<option>Color</option>
+					<option>Animal</option>
+					<option>Place</option>
+					<option>Worldview</option>
+					<option>Religion</option>
+				</select>
+
+				<select id="select4">
+					
+				</select>
+
+				<svg id="graph2">
+					
+				</svg>
+			</div>
+		</main>
+		<footer>
+			<a href="https://github.com/RGladys">
+				<img id="git" src="images/github.png">
+				<p>Site made by Radoslaw Gladys.</p>
+			</a>
+		</footer>
+	</div>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/results.js"></script>
+<script type="text/javascript" src="js/single.js"></script>
+<script type="text/javascript" src="js/compare.js"></script>
+</body>
+</html>
