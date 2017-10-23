@@ -5,4 +5,4 @@ Made with:
 * php
 * mySQL
 
-https://rgladys.000webhostapp.com/stats/
+http://rgladys.xyz/stats/
